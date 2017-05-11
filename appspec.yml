@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: /base/
+    destination: /agentdesks/spa/
+hooks:
+   AfterInstall:
+    - location: config/scripts/restartNginx.sh
